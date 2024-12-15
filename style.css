@@ -1,0 +1,202 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-one
+{
+    background: url(./overlay.jpeg);
+    height: 100vh;
+ }
+.container ul
+{
+    display:flex;
+    list-style: none;
+    gap: 200px;
+    justify-content: center;
+   
+}
+.container
+{
+    background: rgba(255, 255, 255, 0.365);
+    height: 60px;
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+a
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 10px;
+    color: white;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+a:hover
+{
+  color: rgb(209, 209, 209);
+}
+.menu img
+{
+    display: none;
+}
+@media screen and (max-width:470px)
+ {
+    .container ul
+    {
+        justify-content: space-between;
+        padding: 0px 10px 10px 20px;
+        
+    }
+    .list li:nth-child(2),.list li:nth-child(3)
+    {
+        display: none;
+    }
+    .menu img
+    {
+        display: flex;
+        height: 20px;
+        width: 20px;
+    }
+}
+.header
+{
+    padding: 100px 50px;
+}
+.header h1
+{
+    color: white;
+}
+.firstimg2 img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    animation: bounce 7s linear infinite ;
+
+    
+}
+.firstimg1 img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    animation: bounce 5s linear infinite ;
+   
+
+    
+}
+.firstimg img
+{
+    animation: bounce 10s linear infinite;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: 0 0 50px 5px rgba(255, 255, 255, 0.066);
+}
+@keyframes bounce {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-30px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+.head
+{
+    display: flex;
+    gap: 50px;
+    padding-top: 50px;
+}
+@media screen and (max-width:470px)
+{
+    .firstimg2,.firstimg1
+    {
+        display: none;
+    }
+}
+.section-two
+{
+    background: url(./overlay.jpeg);
+    height: 140vh;
+}
+.rotate img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.285);
+    animation: rotateimage 70s infinite linear;
+    display: block;
+    transform-origin: center;
+    margin-top: 70px;
+   
+}
+
+
+@keyframes rotateimage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.body-text
+{
+    display: flex;
+    padding: 50px 70px;
+    gap: 400px;
+}
+.text
+{
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.text p
+{
+   color: white;
+}
+.rotate
+{
+
+}
+@media screen and (max-width:470px)
+{
+    .body-text
+    {
+        display: inline;
+       
+    }
+    .text
+    {
+        width: 350px;
+        height: 570px;
+        padding: 10px 20px;
+        position: relative;
+        left: 20px;
+    }
+    .rotate img
+    {
+        position: relative;
+        left: 45px;
+        bottom: 10px;
+       
+    }
+    
+}
